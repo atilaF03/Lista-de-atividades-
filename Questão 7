@@ -1,0 +1,50 @@
+Algoritmo "Questão 7"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 10/09/2023
+Var
+   // Seção de Declarações das variáveis
+   produto: caracter
+   quantidadeAdquirida:real
+   precoUnitario:real
+   total:real
+   desconto:real
+   totalAPagar:real
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Digite a descrição do produto: ")
+   leia(produto)
+
+   escreva("Digite a quantidade adquirida: ")
+   leia(quantidadeAdquirida)
+
+   escreva("Digite o preço unitário: ")
+   leia(precoUnitario)
+
+   total <- quantidadeAdquirida * precoUnitario
+
+   Se quantidadeAdquirida <= 5 Entao
+      desconto <- 0.02 * total
+   Senao
+      Se quantidadeAdquirida <= 10 Entao
+         desconto <- 0.03 * total
+      Senao
+         desconto <- 0.05 * total
+      fimse
+   fimse
+
+   totalAPagar <- total - desconto
+
+
+   limpatela
+   Escreval("Descrição do produto: ", produto)
+   Escreval("Total: R$", total)
+   Escreval("Desconto: R$", desconto)
+   Escreval("Total a pagar: R$", totalAPagar)
+
+
+
+Fimalgoritmo
