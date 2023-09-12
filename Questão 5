@@ -1,0 +1,44 @@
+Algoritmo "Questão 5"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 09/09/2023
+Var
+   // Seção de Declarações das variáveis
+   A: inteiro
+   B: inteiro
+   Operacao: Caracter
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreva("Qual a Operação?: ")
+   leia(Operacao)
+
+   escreva("Digite o priemiro número: ")
+   leia(A)
+
+   escreva("Digite o segundo número: ")
+   leia (B)
+
+   se Operacao = ("+") entao
+      escreval(A + B)
+   senao
+      se Operacao = ("-") entao
+         escreval(A - B)
+      senao
+         se Operacao = ("*") entao
+            escreval(A * B)
+         senao
+            se Operacao = ("/") entao
+               Se B <> 0 Entao
+               escreval(A / B)
+                  Escreva("Erro: Divisão por zero não é permitida.")
+            fimse
+               Escreva("Operação inválida. Use +, -, *, ou /.")
+         fimse
+      fimse
+   fimse
+fimse
+
+
+Fimalgoritmo
