@@ -1,0 +1,21 @@
+Questão 8
+
+
+Var
+cor: caractere
+Inicio
+Escreva("Digite a cor do CD:
+Leia(cor)
+Se cor = "Verde" Então
+Escreva("O preço do CD é R$ 10,00")
+Senão Se cor = "Azul" Então
+Escreva("O preço do CD é R$ 20,00")
+Senão Se cor = "Amarelo" Então
+Escreva("O preço do CD é R$ 30,00")
+Senão Se cor = "Vermelho" Então
+Escreva("O preço do CD é R$ 40,00")
+Senão
+Escreva("Cor inválida. Não há preço
+associado.")
+FimSe
+Fimalgoritmo
