@@ -1,0 +1,32 @@
+Algoritmo "Questão 9"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 10/09/2023
+
+ Var
+   rendaMensal: real
+   valorEmprestimo: real
+   numPrestacoes: real
+   valorPrestacaoMax: real
+
+Inicio
+   // Solicita a entrada de dados
+   Escreva("Digite a renda mensal do solicitante: ")
+   Leia(rendaMensal)
+
+   Escreva("Digite o valor total do empréstimo solicitado: ")
+   Leia(valorEmprestimo)
+
+   Escreva("Digite o número de prestações desejadas: ")
+   Leia(numPrestacoes)
+
+   valorPrestacaoMax <- 0.3 * rendaMensal
+   
+   Se (valorEmprestimo <= 10 * rendaMensal) E (valorEmprestimo / numPrestacoes <= valorPrestacaoMax) Entao
+      Escreva("Empréstimo CONCEDIDO.")
+   Senao
+      Escreva("Empréstimo NÃO CONCEDIDO.")
+   FimSe
+Fimalgoritmo
