@@ -1,0 +1,48 @@
+Algoritmo "Questão 4"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 10/09/2023
+
+Var
+   kgMorango: real
+   kgMaca: real
+   valorMorango: real
+   valorMaca: real
+   total:real
+   desconto: real
+   valorFinal: real
+
+Inicio
+
+   Escreva("Digite a quantidade de morangos (em Kg): ")
+   Leia(kgMorango)
+
+   Escreva("Digite a quantidade de maçãs (em Kg): ")
+   Leia(kgMaca)
+
+   Se kgMorango <= 5 Entao
+      valorMorango <- kgMorango * 2.50
+   Senao
+      valorMorango <- kgMorango * 2.20
+   FimSe
+
+   Se kgMaca <= 5 Entao
+      valorMaca <- kgMaca * 1.80
+   Senao
+      valorMaca <- kgMaca * 1.50
+   FimSe
+
+   total <- valorMorango + valorMaca
+  limpatela
+   Se (kgMorango + kgMaca > 8) Ou (total > 25.00) Entao
+      desconto <- 0.10 * total
+   Senao
+      desconto <- 0.0
+   FimSe
+
+   valorFinal <- total - desconto
+
+   Escreva("Valor a ser pago: R$", valorFinal)
+Fimalgoritmo
